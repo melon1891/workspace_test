@@ -1,0 +1,21 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "Modern Google-like calculator app",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "calculator",
+    "material-design",
+    "google"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

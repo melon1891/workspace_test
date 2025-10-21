@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電卓 - Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="calculator-header">
+        <h1>電卓</h1>
+      </div>
+
+      <div class="calculator-display-container">
+        <div class="calculator-expression" id="expression"></div>
+        <input type="text" class="calculator-display" id="display" value="0" readonly>
+      </div>
+
+      <div class="calculator-buttons">
+        <!-- Row 1 -->
+        <button class="calculator-button function" data-value="C">C</button>
+        <button class="calculator-button function" data-value="DEL">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="calculator-button function" data-value="%">%</button>
+        <button class="calculator-button operator" data-value="/">÷</button>
+
+        <!-- Row 2 -->
+        <button class="calculator-button number" data-value="7">7</button>
+        <button class="calculator-button number" data-value="8">8</button>
+        <button class="calculator-button number" data-value="9">9</button>
+        <button class="calculator-button operator" data-value="*">×</button>
+
+        <!-- Row 3 -->
+        <button class="calculator-button number" data-value="4">4</button>
+        <button class="calculator-button number" data-value="5">5</button>
+        <button class="calculator-button number" data-value="6">6</button>
+        <button class="calculator-button operator" data-value="-">−</button>
+
+        <!-- Row 4 -->
+        <button class="calculator-button number" data-value="1">1</button>
+        <button class="calculator-button number" data-value="2">2</button>
+        <button class="calculator-button number" data-value="3">3</button>
+        <button class="calculator-button operator" data-value="+">+</button>
+
+        <!-- Row 5 -->
+        <button class="calculator-button function" data-value="+/-">+/−</button>
+        <button class="calculator-button number" data-value="0">0</button>
+        <button class="calculator-button number" data-value=".">.</button>
+        <button class="calculator-button equals" data-value="=">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/calculator.js"></script>
+  <script src="src/ui.js"></script>
+</body>
+</html>
